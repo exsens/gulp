@@ -1,0 +1,15 @@
+.object-fit {
+  font-family: 'object-fit: cover; object-position: center;';
+  object-fit: cover;
+  object-position: center;
+
+  &--left {
+    font-family: 'object-fit: cover; object-position: left;';
+    object-fit: cover;
+    object-position: left;
+  }
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}

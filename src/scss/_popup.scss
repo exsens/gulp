@@ -1,0 +1,80 @@
+/* cont popup */
+.out-popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.55s;
+}
+
+/* btn close  */
+.close {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  line-height: 1;
+  text-align: center;
+  background: gray;
+  transition: 0.35s;
+}
+
+.close:hover {
+  background: red;
+}
+
+/* content popup */
+.popup-window {
+  z-index: 1000;
+  overflow: auto;
+  padding: 15px;
+  width: 100%;
+  max-width: 550px;
+  max-height: 95vh;
+  transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+  /* background: #ffffff;
+    color: #313030; */
+  transition: 0.52s;
+}
+
+.view__out {
+  z-index: 999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.view__popup {
+  transform: perspective(600px) translate(0, 0%) rotateX(0deg);
+}
+
+.hidden__popup {
+  transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+}
+
+/* scroll content popup  */
+
+/* .popup-window::-webkit-scrollbar {
+    width: 0;
+}
+
+.popup-window {
+    -ms-overflow-style: none;
+}
+
+.popup-window {
+    scrollbar-width: none;
+} */
+
+/* scroll   */

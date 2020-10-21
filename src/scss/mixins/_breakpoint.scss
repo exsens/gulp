@@ -1,0 +1,29 @@
+@mixin mw1 {
+  @media (max-width: (1025px)) {
+    @content;
+  }
+}
+
+@mixin mw2 {
+  @media (max-width: (1024px)) {
+    @content;
+  }
+}
+
+@mixin mw3 {
+  @media (max-width: (1023px)) {
+    @content;
+  }
+}
+
+@mixin mw4 {
+  @media (max-width: (1022px)) {
+    @content;
+  }
+}
+
+@mixin mw5 {
+  @media (max-width: (1021px)) {
+    @content;
+  }
+}
