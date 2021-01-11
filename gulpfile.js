@@ -14,7 +14,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const browserSync = require('browser-sync').create();
 const fileinclude = require('gulp-file-include');
 const webp = require('gulp-webp');
-const webpHtml = require('gulp-webp-html');
 const webpCss = require('gulp-webp-css');
 const imagemin = require('gulp-imagemin');
 const svgSprite = require('gulp-svg-sprite');
@@ -59,7 +58,6 @@ const html = () => {
 			prefix: '@',
 			basepath: '@file'
 		}))
-		.pipe(webpHtml())
 		.pipe(dest(path.build.html))
 		.pipe(browserSync.stream());
 
